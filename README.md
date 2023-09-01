@@ -1,4 +1,5 @@
 # Flutter Calculator
+<<<<<<< HEAD
 
 A calculator based on the Andriod calculator. 
 
@@ -15,3 +16,6 @@ This is a screen shot of the  Android calculator from my own phone that I am try
 
 
 ## The Outcome:
+=======
+Copy of the Android calculator as a learning project to help me learn Flutter.
+>>>>>>> e08dc84ca690c2a713ca357a072b8465b784417d
