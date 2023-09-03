@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './button.dart';
 
 void main() {
   runApp(const MainApp());
@@ -6,6 +7,10 @@ void main() {
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
+
+  final operatorButtonColor = Colors.grey;
+  final numberButtonColor = Colors.blueGrey;
+  final equalsButtonColor = Colors.deepOrange;
 
   @override
   Widget build(BuildContext context) {
@@ -44,46 +49,126 @@ class MainApp extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                calculatorButton,
-                calculatorButton,
-                calculatorButton,
-                calculatorButton,
+                CalculatorButton(
+                  buttonLabel: 'C',
+                  buttonColor: operatorButtonColor,
+                  onPressed: () {},
+                ),
+                CalculatorButton(
+                  buttonLabel: '%',
+                  buttonColor: operatorButtonColor,
+                  onPressed: () {},
+                ),
+                CalculatorButton(
+                  buttonLabel: '<-',
+                  buttonColor: operatorButtonColor,
+                  onPressed: () {},
+                ),
+                CalculatorButton(
+                  buttonLabel: '/',
+                  buttonColor: operatorButtonColor,
+                  onPressed: () {},
+                ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                calculatorButton,
-                calculatorButton,
-                calculatorButton,
-                calculatorButton,
+                CalculatorButton(
+                  buttonLabel: '7',
+                  buttonColor: numberButtonColor,
+                  onPressed: () {},
+                ),
+                CalculatorButton(
+                  buttonLabel: '8',
+                  buttonColor: numberButtonColor,
+                  onPressed: () {},
+                ),
+                CalculatorButton(
+                  buttonLabel: '9',
+                  buttonColor: numberButtonColor,
+                  onPressed: () {},
+                ),
+                CalculatorButton(
+                  buttonLabel: 'X',
+                  buttonColor: operatorButtonColor,
+                  onPressed: () {},
+                ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                calculatorButton,
-                calculatorButton,
-                calculatorButton,
-                calculatorButton,
+                CalculatorButton(
+                  buttonLabel: '4',
+                  buttonColor: numberButtonColor,
+                  onPressed: () {},
+                ),
+                CalculatorButton(
+                  buttonLabel: '5',
+                  buttonColor: numberButtonColor,
+                  onPressed: () {},
+                ),
+                CalculatorButton(
+                  buttonLabel: '6',
+                  buttonColor: numberButtonColor,
+                  onPressed: () {},
+                ),
+                CalculatorButton(
+                  buttonLabel: '-',
+                  buttonColor: operatorButtonColor,
+                  onPressed: () {},
+                ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                calculatorButton,
-                calculatorButton,
-                calculatorButton,
-                calculatorButton,
+                CalculatorButton(
+                  buttonLabel: '1',
+                  buttonColor: numberButtonColor,
+                  onPressed: () {},
+                ),
+                CalculatorButton(
+                  buttonLabel: '2',
+                  buttonColor: numberButtonColor,
+                  onPressed: () {},
+                ),
+                CalculatorButton(
+                  buttonLabel: '3',
+                  buttonColor: numberButtonColor,
+                  onPressed: () {},
+                ),
+                CalculatorButton(
+                  buttonLabel: '+',
+                  buttonColor: operatorButtonColor,
+                  onPressed: () {},
+                ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                calculatorButton,
-                calculatorButton,
-                calculatorButton,
-                calculatorButton,
+                CalculatorButton(
+                  buttonLabel: '00',
+                  buttonColor: numberButtonColor,
+                  onPressed: () {},
+                ),
+                CalculatorButton(
+                  buttonLabel: '0',
+                  buttonColor: numberButtonColor,
+                  onPressed: () {},
+                ),
+                CalculatorButton(
+                  buttonLabel: '.',
+                  buttonColor: numberButtonColor,
+                  onPressed: () {},
+                ),
+                CalculatorButton(
+                  buttonLabel: '=',
+                  buttonColor: equalsButtonColor,
+                  onPressed: () {},
+                ),
               ],
             ),
           ],
@@ -92,9 +177,3 @@ class MainApp extends StatelessWidget {
     );
   }
 }
-
-// TODO: Turn this into a function to take different text/icons
-var calculatorButton = ElevatedButton(
-  onPressed: () {},
-  child: const Text('X'),
-);
